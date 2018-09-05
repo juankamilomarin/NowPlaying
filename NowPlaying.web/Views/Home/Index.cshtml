@@ -1,0 +1,67 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<h4>Twitter feed for #NowPlaying</h4>
+
+<div class="card">
+    <form class="text-center border border-light p-5" id="tweetData">
+
+        <p class="h4 mb-4">Share your own #NowPlaying</p>
+
+        <!-- Name -->
+        <input type="url" id="videoUrl" class="form-control form mb-3" placeholder="Video Url">
+
+        <!-- Message -->
+        <div class="form-group">
+            <textarea id="message" class="form-control rounded-0" id="exampleFormControlTextarea2" rows="2" placeholder="Message"></textarea>
+        </div>
+
+        <!-- Send button -->
+        <button class="btn btn-info btn-block" type="submit">Tweet to #NowPlaying</button>
+
+    </form>
+</div>
+<br>
+<div class="row">
+    
+    <div class="col-md-3">
+    </div>
+    <div class="col-md-6">
+        @*<form id="tweetData">
+            <div class="row">
+                <div class="col">
+                    <label for="youtubeURL">Url</label>
+                    <input id="youtubeURL" type="text" class="form-control" placeholder="https://www.youtube.com/">
+                </div>
+                <div class="col">
+                    <label for="message">Message</label>
+                    <input id="message" type="text" class="form-control" placeholder="Message">
+                </div>
+            </div>
+            <input type="submit">
+        </form>*@
+        <!-- Default form contact -->
+
+        <!-- Default form contact -->
+    </div>
+    <div class="col-md-3">
+    </div>
+</div>
+<div class="jumbotron">
+    <div class="row">
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-6">
+            <p>
+                <div id="tweetFeed">
+
+                </div>
+            </p>
+        </div>
+        <div class="col-md-3">
+        </div>
+    </div>
+</div>
+
+
