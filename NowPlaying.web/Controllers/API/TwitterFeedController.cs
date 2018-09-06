@@ -33,7 +33,7 @@ namespace NowPlaying.Controllers.API
         [Route("latestweets")]
         public IHttpActionResult GetLatestTweets(double latitude, double longitude)
         {
-            // Force throw exceptions
+            // Force throwing exceptions
             ExceptionHandler.SwallowWebExceptions = false;
 
             try
@@ -72,7 +72,7 @@ namespace NowPlaying.Controllers.API
         [Route("")]
         public IHttpActionResult PostTweet(string message, string videoUrl, double latitude, double longitude)
         {
-            // Force throw exceptions
+            // Force throwing exceptions
             ExceptionHandler.SwallowWebExceptions = false;
 
             try

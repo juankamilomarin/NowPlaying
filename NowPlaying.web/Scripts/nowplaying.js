@@ -151,7 +151,13 @@ $(function (np, $, undefined) {
                 url: `/api/twitterfeed/?message=${message}&videourl=${videoUrl}&latitude=${np.userLatitude}&longitude=${np.userLongitude}`,
                 context: this,
                 contentType: "application/json"
-            });
+            }).then(
+                function(tweet) {
+                    console.log(`Tweet successfully posted: ${tweet.HTML}`);
+                },
+                function (error) {
+                    console.log(`There was an error posting the test: ${error.responseJSON.Message}`);
+                });
 
             event.preventDefault();
         });
