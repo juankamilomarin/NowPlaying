@@ -50,7 +50,7 @@ namespace NowPlaying.Controllers.API
                 IEnumerable<ITweet> tweets = Search.SearchTweets(searchParameter);
 
                 // Return the list of OEmbed tweeds
-                // OEmbedTweet contains the HTML to comply with tweets displaying guidance (https://developer.twitter.com/en/developer-terms/display-requirements.html)
+                // OEmbedTweet contains the HTML to comply with tweets displaying guidance (see https://developer.twitter.com/en/developer-terms/display-requirements.html)
                 List<IOEmbedTweet> oEmbeddedTweets = tweets.Select(Tweet.GetOEmbedTweet).ToList();
                 return Ok(oEmbeddedTweets);
             }
