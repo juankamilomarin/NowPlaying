@@ -100,7 +100,7 @@ $(function (np, $, undefined) {
         };
 
         // Start the hub and once it finishes Twitter stream should be started
-        $.connection.hub.start().done(startTwitterStream());
+        $.connection.hub.start().done(startTwitterStream);
     }
 
     function startTwitterStream() {

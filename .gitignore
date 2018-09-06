@@ -259,3 +259,4 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/NowPlaying.web/Properties/PublishProfiles/NowPlayingWeb - Web Deploy.pubxml
