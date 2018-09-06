@@ -6,6 +6,7 @@ namespace NowPlaying
     {
         public void Configuration(IAppBuilder app)
         {
+            // Startup Signal R
             app.MapSignalR();
         }
     }

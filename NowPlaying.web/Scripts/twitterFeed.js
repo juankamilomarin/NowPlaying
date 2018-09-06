@@ -57,7 +57,7 @@ $(function () {
 
                 const twitterFeedHub = $.connection.twitterFeedHub;
 
-                twitterFeedHub.client.updateTweet = function(tweet) {
+                twitterFeedHub.client.updateFeed = function(tweet) {
                     $(tweet.HTML)
                         .hide()
                         .prependTo("#tweetFeed")
@@ -75,7 +75,7 @@ $(function () {
             context: this,
             contentType: "application/json"
         }).done(function (nominatimData) {
-            $.connection.twitterFeedHub.server.startTwitterLiveWithLocation(
+            $.connection.twitterFeedHub.server.startTwitterStream(
                 parseFloat(nominatimData.boundingbox[0]), parseFloat(nominatimData.boundingbox[2]),
                 parseFloat(nominatimData.boundingbox[1]), parseFloat(nominatimData.boundingbox[3]) 
             );
